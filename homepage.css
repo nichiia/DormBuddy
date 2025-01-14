@@ -1,0 +1,273 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background: #a0a0a0;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.logo-image {
+    width: 32px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background: #a0a0a0;
+    color: #fff;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Center the navigation links */
+.nav-links {
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1; 
+    gap: 1.5em; /
+}
+
+nav a {
+    padding: 8px 10px;
+    background-color: darkgray;
+    border-radius: 13px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav a:hover {
+    background-color: #777; 
+}
+
+/* Auth buttons */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    padding: 10px 20px;
+    background-color: darkgray;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.auth-buttons button:hover {
+    background-color: #777;
+}
+
+
+.hero {
+    padding: 2em;
+    text-align: left;
+    background: #eef5ff;
+    background-image: url('image/house4.svg'); 
+    background-position: center;  /* Center the image */
+    background-attachment: fixed;  /* Optional: makes the background image fixed while scrolling */
+    color: #fff;  /* Set the text color to white for better contrast */
+}
+
+.hero-content h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), -2px -2px 4px rgba(0, 0, 0, 0.7), 2px -2px 4px rgba(0, 0, 0, 0.7), -2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid #f9f9f9;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgba(160, 160, 160, 0.8);  /* Semi-transparent background for search bar */
+}
+
+.search-bar select {
+    border: none;
+    padding: 1em;
+    font-size: 1em;
+    background-color: #a0a0a0;
+    outline: none;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.4em;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+.search-bar button {
+    border: none;
+    background: #a0a0a0;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    width: 20px;
+    height: 20px;
+}
+
+.highlights {
+    background-color: #a0a0a0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+    border-radius: 18px;
+}
+
+.highlight-item {
+    text-align: center;
+    font-size: 1em;
+}
+
+.highlight-item span {
+    font-size: 2em;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.choose-university {
+    background-color: #a0a0a0;
+    padding-bottom: 25px;
+    padding-top: 2px;
+    border-radius: 2rem;
+    position: relative;
+}
+
+h2 {
+    align-items: center;
+    padding-left: 35px;
+    font-size: 2rem;
+}
+
+.university-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem; 
+}
+
+.university-card {
+    width: 200px;
+    padding: 1rem;
+    background: #e7e4e4;
+    border-radius: 23px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer
+}
+
+.university-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.partners img {
+    width: 60px;
+    margin: 0 10px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.booking-process {
+    text-align: center;
+    padding: 2em;
+    margin-top: 2em;
+    background-color: #e0e0e0;
+}
+
+.booking-process h3 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.process-steps {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.step {
+    width: 30%;
+    text-align: center;
+}
+
+.icon {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #666;
+}
+
+h5 {
+    margin: 0.5em 0;
+    font-size: 1.4em;
+}
+
+p {
+    color: #555;
+    font-size: 0.95em;
+}
+
+button#start-now {
+    background-color: #888;
+    color: white;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button#start-now:hover {
+    background-color: #555;
+}

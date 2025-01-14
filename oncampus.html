@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On-Campus Housing</title>
+    <link rel="stylesheet" href="oncampus.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/image/DormBuddy.svg" alt="DormBuddy Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="oncampus.html" class="active">On-Campus</a></li>
+                <li><a href="offcampus.html">Off-Campus</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>On-Campus Housing Options</h1>
+
+        <section class="dormitory-options">
+            <div class="unit-type">
+                <h2>1 Person Unit</h2>
+                <div class="room-cards">
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="/image/room1p.jpg" alt="Room 1">
+                        </div>
+                        <p><strong>Room 1</strong></p>
+                        <p>5 mins from University Malaysia Sabah</p>
+                        <p>From RM100/month</p>
+                        <button class="select-room" data-room="Room 1" data-price="100">Select</button>
+                    </div>
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="/image/room1p2.jpg" alt="Room 2">
+                        </div>
+                        <p><strong>Room 2</strong></p>
+                        <p>5 mins from University Malaysia Sabah</p>
+                        <p>From RM100/month</p>
+                        <button class="select-room" data-room="Room 2" data-price="100">Select</button>
+                    </div>
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="/image/room1p3.jpg" alt="Room 3">
+                        </div>
+                        <p><strong>Room 3</strong></p>
+                        <p>5 mins from University Malaysia Sabah</p>
+                        <p>From RM100/month</p>
+                        <button class="select-room" data-room="Room 3" data-price="100">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="unit-type">
+                <h2>2 Person Unit</h2>
+                <div class="room-cards">
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="/image/room2p1.jpg" alt="Room 1 (2 Person)">
+                        </div>
+                        <p><strong>Room 1</strong></p>
+                        <p>5 mins from University Malaysia Sabah</p>
+                        <p>From RM150/month</p>
+                        <button class="select-room" data-room="Room 1" data-price="150">Select</button>
+                    </div>
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="/image/room2p2.jpg" alt="Room 2 (2 Person)">
+                        </div>
+                        <p><strong>Room 2</strong></p>
+                        <p>5 mins from University Malaysia Sabah</p>
+                        <p>From RM150/month</p>
+                        <button class="select-room" data-room="Room 2" data-price="150">Select</button>
+                    </div>
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="/image/room2p3.jpg" alt="Room 3 (2 Person)">
+                        </div>
+                        <p><strong>Room 3</strong></p>
+                        <p>5 mins from University Malaysia Sabah</p>
+                        <p>From RM150/month</p>
+                        <button class="select-room" data-room="Room 3" data-price="150">Select</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="housing-policies">
+            <h2>Housing Policies</h2>
+            <ul>
+                <li>Room assignments are based on availability and preferences but cannot be guaranteed.</li>
+                <li>Quiet hours are enforced from 10 PM to 7 AM to maintain a conducive study environment.</li>
+                <li>Guests must be registered and follow campus rules.</li>
+                <li>Prohibited items include candles, hot plates, and extension cords.</li>
+                <li>Submit maintenance requests via the housing portal for repairs.</li>
+                <li>Check-in and check-out dates/times require approval for changes.</li>
+                <li>Residents must follow the university's code of conduct and housing agreement.</li>
+            </ul>
+            <label>
+                <input type="checkbox" id="agree-policies" onchange="toggleBookingButton()">
+                I agree with the housing policies
+            </label>
+            <button id="booking-button" disabled onclick="window.location.href='payment.html'">Yes! I'm Booking</button>
+        </section>
+    </main>
+
+    <script src="oncampus.js"></script>
+</body>
+</html>

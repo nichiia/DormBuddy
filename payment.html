@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/image/DormBuddy.svg" alt="DormBuddy Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="oncampus.html">On-Campus</a></li>
+                <li><a href="offcampus.html">Off-Campus</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Payment Process</h1>
+        <div class="payment-section">
+            <div class="payment-methods">
+                <h2>Select Your Payment Method</h2>
+                <div class="methods">
+                    <button onclick="selectPaymentMethod('PayPal')">
+                        <img src="/image/paypal.png" alt="PayPal Logo" />
+                        PayPal
+                    </button>
+                    <button onclick="selectPaymentMethod('Visa')">
+                        <img src="/image/visa.png" alt="Visa Logo" />
+                        Visa
+                    </button>
+                    <button onclick="selectPaymentMethod('MasterCard')">
+                        <img src="/image/mastercard.png" alt="MasterCard Logo" />
+                        MasterCard
+                    </button>
+                    <button onclick="selectPaymentMethod('FPX')">
+                        <img src="/image/fpxlogo.png" alt="FPX Logo" />
+                        FPX
+                    </button>
+                    <button onclick="selectPaymentMethod('Maybank')">
+                        <img src="/image/maybank.png" alt="Maybank Logo" />
+                        Maybank
+                    </button>
+                </div>
+            </div>
+
+            <div class="payment-summary">
+                <h2>Payment Summary</h2>
+                <p>Payment Reference: <strong>ID123456778</strong></p>
+                <div class="summary-details">
+                    <div>
+                        <p id="room-details">Room details will appear here.</p>
+                        <p id="room-price">Price: N/A</p>
+                    </div>
+                </div>
+                <div class="total">
+                    <p>Taxes: RM3.00</p>
+                    <p><strong>Total: <span id="total-price">N/A</span></strong></p>
+                </div>
+                <button id="secure-payment" onclick="continueToPayment()" disabled>Proceed to Payment</button>
+                <button id="cancel-payment" onclick="cancelPayment()">Cancel Payment</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up Message -->
+    <div id="popup" class="popup hidden">
+        <p>Redirecting to payment process...</p>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>
